@@ -410,14 +410,17 @@ p, li, figcaption { text-wrap: pretty; }
 .story-card:hover .card-link svg { transform: translateX(4px); }
 
 /* ---------- About / note ---------- */
-.about-note {
+.about-note,
+.rewrite-note {
   max-width: 720px;
   margin: 0 auto var(--space-24);
   padding: var(--space-8) var(--space-6);
   text-align: center;
 }
-.about-note h2 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
-.about-note p { color: var(--color-text-muted); margin-bottom: var(--space-3); }
+.about-note h2,
+.rewrite-note h2 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
+.about-note p,
+.rewrite-note p { color: var(--color-text-muted); margin-bottom: var(--space-3); }
 .note-caution {
   font-size: var(--text-xs);
   color: var(--color-text-faint);

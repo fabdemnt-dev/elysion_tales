@@ -85,6 +85,7 @@ STORY_META = {
         "tags": ["アイリス", "ミモザ", "アネモネ", "ダフネ"],
         "nav_label": "ChatGPT版",
         "sample_key": "chatgpt_sample",
+        "rewrite_key": "chatgpt_rewrite",
     },
     "claude": {
         "label": "CLAUDE VERSION",
@@ -94,6 +95,7 @@ STORY_META = {
         "tags": ["エリカ", "ミモザ", "アイリス", "アネモネ"],
         "nav_label": "Claude版",
         "sample_key": "claude_sample",
+        "rewrite_key": "claude_rewrite",
     },
     "gemini": {
         "label": "GEMINI VERSION",
@@ -103,6 +105,7 @@ STORY_META = {
         "tags": ["アイリス", "ダフネ", "アネモネ", "カンパニュラ"],
         "nav_label": "Gemini版",
         "sample_key": "gemini_sample",
+        "rewrite_key": "gemini_rewrite",
     },
 }
 
@@ -145,6 +148,45 @@ SAMPLE_META = {
 }
 
 
+REWRITE_META = {
+    "chatgpt_rewrite": {
+        "parent": "chatgpt",
+        "src": "chatgpt_rewrite",
+        "file": "chatgpt-rewrite.html",
+        "simple_file": "simple-chatgpt-rewrite.html",
+        "label": "CHATGPT VERSION \u30fb\u66f8\u304d\u76f4\u3057\u7248",
+        "title": "\u82b1\u54b2\u304f\u8857\u30a8\u30ea\u30e5\u30b7\u30aa\u30f3\u3000\u53d6\u6750\u65e5\u8a18\uff08\u66f8\u304d\u76f4\u3057\u7248\uff09",
+        "nav_label": "\u66f8\u304d\u76f4\u3057\u7248",
+        "teaser": "\u300c\u898b\u305f\u300d\u3068\u3044\u3046\u8a00\u8449\u3092\u4fe1\u3058\u304d\u308c\u306a\u3044\u65b0\u805e\u8a18\u8005\u304c\u3001\u9280\u8272\u306e\u82b1\u3073\u3089\u306e\u566a\u3092\u8ffd\u3044\u304b\u3051\u308b\u66f8\u304d\u76f4\u3057\u7248\u3002\u540c\u3058\u5341\u8a71\u3067\u3082\u3001\u8996\u70b9\u3082\u7b46\u81f4\u3082\u307e\u308b\u3067\u9055\u3046\u300c\u3082\u3046\u3072\u3068\u3064\u306e\u30a8\u30ea\u30e5\u30b7\u30aa\u30f3\u300d\u3002",
+        "tags": ["\u30a2\u30cd\u30e2\u30cd", "\u30a2\u30a4\u30ea\u30b9", "\u30cd\u30ea\u30cd", "\u30a8\u30ea\u30ab"],
+    },
+    "claude_rewrite": {
+        "parent": "claude",
+        "src": "claude_rewrite",
+        "file": "claude-rewrite.html",
+        "simple_file": "simple-claude-rewrite.html",
+        "label": "CLAUDE VERSION \u30fb\u66f8\u304d\u76f4\u3057\u7248",
+        "title": "\u3055\u3088\u306a\u3089\u306e\u6570\u3048\u65b9",
+        "nav_label": "\u66f8\u304d\u76f4\u3057\u7248",
+        "teaser": "\u3055\u3088\u306a\u3089\u306e\u8a00\u8449\u3092\u6570\u3048\u7d9a\u3051\u308b\u8a18\u8005\u306e\u3001\u65ad\u7247\u7684\u306a\u89b3\u5bdf\u8a18\u3002\u8857\u306e\u5c0f\u3055\u306a\u5225\u308c\u3068\u305d\u306e\u4f59\u767d\u3092\u7db4\u3063\u305f\u3001\u66f8\u304d\u76f4\u3057\u7248\u306e\u77ed\u7de8\u3002",
+        "tags": ["\u30a2\u30cd\u30e2\u30cd", "\u30c0\u30d5\u30cd", "\u30ab\u30f3\u30d1\u30cb\u30e5\u30e9"],
+    },
+    "gemini_rewrite": {
+        "parent": "gemini",
+        "src": "gemini_rewrite",
+        "file": "gemini-rewrite.html",
+        "simple_file": "simple-gemini-rewrite.html",
+        "label": "GEMINI VERSION \u30fb\u66f8\u304d\u76f4\u3057\u7248",
+        "title": "\u8a18\u8005\u624b\u5e33\u300e\u82b1\u5b88\u308a\u305f\u3061\u306e\u4f59\u767d\u300f",
+        "nav_label": "\u66f8\u304d\u76f4\u3057\u7248",
+        "teaser": "\u53d6\u6750\u306b\u306f\u306a\u3089\u306a\u3044\u3001\u8857\u306e\u3055\u3055\u3084\u304d\u3092\u96c6\u3081\u305f\u8a18\u8005\u624b\u5e33\u3002\u901a\u8a71\u9b54\u6cd5\u3067\u7e4b\u304c\u308b\u4f4f\u6c11\u305f\u3061\u306e\u58f0\u3092\u30b9\u30b1\u30c3\u30c1\u3057\u305f\u3001\u66f8\u304d\u76f4\u3057\u7248\u306e\u756a\u5916\u7de8\u3002",
+        "tags": ["\u30a2\u30a4\u30ea\u30b9", "\u30c0\u30d5\u30cd", "\u30ab\u30f3\u30d1\u30cb\u30e5\u30e9", "\u30df\u30e2\u30b6"],
+    },
+}
+
+REWRITE_ORDER = ["chatgpt_rewrite", "claude_rewrite", "gemini_rewrite"]
+
+
 def build_index():
     cards = []
     for key in ORDER:
@@ -160,6 +202,19 @@ def build_index():
     </article>""")
 
     petals = "".join(petal(f"petal--{i}") for i in range(1, 6))
+
+    rewrite_cards = []
+    for key in REWRITE_ORDER:
+        rm = REWRITE_META[key]
+        tags = "".join(f"<span>#{t}</span>" for t in rm["tags"])
+        rewrite_cards.append(f"""    <article class="story-card" data-story="{key}">
+      <div class="card-flower">{flower_icon()}</div>
+      <p class="card-kicker">{rm['label']}</p>
+      <h2 class="card-title">{rm['title']}</h2>
+      <p class="card-teaser">{rm['teaser']}</p>
+      <div class="card-tags">{tags}</div>
+      <a class="card-link" href="{rm['file']}">読む {ARROW_ICON}</a>
+    </article>""")
 
     html = f"""{head(
         "Elysion Tales | 花咲く街エリュシオンのものがたり",
@@ -182,6 +237,15 @@ def build_index():
 
   <section class="story-grid" aria-label="物語一覧">
 {chr(10).join(cards)}
+  </section>
+
+  <section class="rewrite-note">
+    <h2>書き直し版</h2>
+    <p>同じ設定を、もう一度別の角度から紡いでもらった書き直し版です。</p>
+  </section>
+
+  <section class="story-grid" aria-label="書き直し版一覧">
+{chr(10).join(rewrite_cards)}
   </section>
 
   <section class="about-note">
@@ -222,6 +286,13 @@ def build_story_page(key):
         more_cards += f"""
       <a class="more-card" data-story="{sample_key}" href="{sm['file']}">
         {sm['nav_label']}(冒頭のみ)を読む {ARROW_ICON}
+      </a>"""
+    rewrite_key = m.get("rewrite_key")
+    if rewrite_key:
+        rm = REWRITE_META[rewrite_key]
+        more_cards += f"""
+      <a class="more-card" data-story="{rewrite_key}" href="{rm['file']}">
+        {rm['nav_label']}を読む {ARROW_ICON}
       </a>"""
     tags_line = " ".join(f"#{t}" for t in m["tags"])
 
@@ -294,6 +365,15 @@ def build_simple_index():
         <p>{m['teaser']}</p>
       </li>""")
 
+    rewrite_items = []
+    for key in REWRITE_ORDER:
+        rm = REWRITE_META[key]
+        rewrite_items.append(f"""      <li>
+        <p class="simple-tag">{rm['label']}</p>
+        <a href="{rm['simple_file']}">{rm['title']}</a>
+        <p>{rm['teaser']}</p>
+      </li>""")
+
     html = f"""{simple_head(
         "Elysion Tales (シンプル版)",
         "花咲く街エリュシオンを舞台に、ChatGPT・Claude・Geminiの物語をシンプルなレイアウトで読むページ。",
@@ -307,6 +387,11 @@ def build_simple_index():
 
     <ul class="simple-list">
 {chr(10).join(items)}
+    </ul>
+
+    <h2>書き直し版</h2>
+    <ul class="simple-list">
+{chr(10).join(rewrite_items)}
     </ul>
 
     <p class="simple-footer">このサイトは個人で楽しむことを目的に作成しています。コンテンツの転載・再配布はご遠慮ください。</p>
@@ -330,6 +415,10 @@ def build_simple_story(key):
     if sample_key:
         sm = SAMPLE_META[sample_key]
         other_links += f'\n      <a href="{sm["simple_file"]}">{sm["nav_label"]}(冒頭のみ)を読む</a>'
+    rewrite_key = m.get("rewrite_key")
+    if rewrite_key:
+        rm = REWRITE_META[rewrite_key]
+        other_links += f'\n      <a href="{rm["simple_file"]}">{rm["nav_label"]}を読む</a>'
     tags_line = " ".join(f"#{t}" for t in m["tags"])
 
     html = f"""{simple_head(
@@ -407,6 +496,102 @@ def build_sample_page(key):
         f.write(html)
 
 
+def build_rewrite_page(key):
+    rm = REWRITE_META[key]
+    parent = STORY_META[rm["parent"]]
+    body = convert_story_html(rm["src"])
+    tags_line = " ".join(f"#{t}" for t in rm["tags"])
+    others = [k for k in REWRITE_ORDER if k != key]
+    more_cards = "\n".join(
+        f"""      <a class="more-card" data-story="{o}" href="{REWRITE_META[o]['file']}">
+        {REWRITE_META[o]['label']}を読む {ARROW_ICON}
+      </a>"""
+        for o in others
+    )
+
+    html = f"""{head(
+        f"{rm['title']} | {rm['label']} | Elysion Tales",
+        rm['teaser'],
+    )}
+<body>
+{header()}
+
+  <div class="story-page" data-story="{key}">
+    <a class="back-link" href="index.html">&larr; ものがたり一覧に戻る</a>
+
+    <header class="story-hero">
+      <p class="story-kicker">{rm['label']} <span class="dot">&middot;</span> 花咲く街エリュシオン</p>
+      <h1>{rm['title']}</h1>
+      <p class="story-meta">{tags_line}</p>
+      <p class="story-note">{rm['teaser']}</p>
+    </header>
+
+    <article class="story-body">
+{body}
+    </article>
+
+    <nav class="story-more">
+      <h2>他のバージョンも読む</h2>
+      <div class="more-grid">
+{more_cards}
+      <a class="more-card" data-story="{rm['parent']}" href="{parent['file']}">
+        {parent['nav_label']}（本編）を読む {ARROW_ICON}
+      </a>
+      </div>
+    </nav>
+  </div>
+
+{footer()}
+  <script src="assets/script.js"></script>
+</body>
+</html>
+"""
+    with open(f"{OUT_DIR}/{rm['file']}", "w", encoding="utf-8") as f:
+        f.write(html)
+
+
+def build_simple_rewrite_page(key):
+    rm = REWRITE_META[key]
+    parent = STORY_META[rm["parent"]]
+    body = convert_story_html(rm["src"])
+    tags_line = " ".join(f"#{t}" for t in rm["tags"])
+    others = [k for k in REWRITE_ORDER if k != key]
+    other_links = "\n".join(
+        f'      <a href="{REWRITE_META[o]["simple_file"]}">{REWRITE_META[o]["label"]}を読む</a>'
+        for o in others
+    )
+
+    html = f"""{simple_head(
+        f"{rm['title']} (シンプル版) | Elysion Tales",
+        rm['teaser'],
+    )}
+<body class="simple-page">
+  <div class="simple-wrap">
+{simple_topline('simple-index.html', '← 一覧に戻る')}
+
+    <h1>{rm['title']}</h1>
+    <p class="simple-meta"><strong>{rm['label']}</strong> &middot; {tags_line}</p>
+    <p class="simple-meta">{rm['teaser']}</p>
+
+    <div class="simple-body">
+{body}
+    </div>
+
+    <div class="simple-nav-links">
+{other_links}
+      <a href="simple-{rm['parent']}.html">{parent['nav_label']}（本編）を読む</a>
+      <a href="{rm['file']}">❀ この書き直し版をかわいい版で見る</a>
+    </div>
+
+    <p class="simple-footer">Elysion Tales &middot; <a href="simple-index.html">シンプル版一覧</a></p>
+  </div>
+</body>
+</html>
+"""
+    with open(f"{OUT_DIR}/{rm['simple_file']}", "w", encoding="utf-8") as f:
+        f.write(html)
+
+
 def build_simple_sample_page(key):
     sm = SAMPLE_META[key]
     parent = STORY_META[sm["parent"]]
@@ -452,4 +637,7 @@ if __name__ == "__main__":
     for key in SAMPLE_META:
         build_sample_page(key)
         build_simple_sample_page(key)
+    for key in REWRITE_ORDER:
+        build_rewrite_page(key)
+        build_simple_rewrite_page(key)
     print("build complete")
