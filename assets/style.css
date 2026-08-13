@@ -365,6 +365,9 @@ p, li, figcaption { text-wrap: pretty; }
 .story-card[data-story='chatgpt'] { --card-accent: var(--accent-chatgpt); --card-accent-bg: var(--accent-chatgpt-highlight); }
 .story-card[data-story='claude'] { --card-accent: var(--accent-claude); --card-accent-bg: var(--accent-claude-highlight); }
 .story-card[data-story='gemini'] { --card-accent: var(--accent-gemini); --card-accent-bg: var(--accent-gemini-highlight); }
+.story-card[data-story='chatgpt_rewrite'] { --card-accent: var(--accent-chatgpt); --card-accent-bg: var(--accent-chatgpt-highlight); }
+.story-card[data-story='claude_rewrite'] { --card-accent: var(--accent-claude); --card-accent-bg: var(--accent-claude-highlight); }
+.story-card[data-story='gemini_rewrite'] { --card-accent: var(--accent-gemini); --card-accent-bg: var(--accent-gemini-highlight); }
 
 .card-flower {
   width: 52px; height: 52px;
@@ -553,6 +556,9 @@ p, li, figcaption { text-wrap: pretty; }
 .story-page[data-story='chatgpt'] { --story-accent: var(--accent-chatgpt); --story-accent-bg: var(--accent-chatgpt-highlight); }
 .story-page[data-story='claude'] { --story-accent: var(--accent-claude); --story-accent-bg: var(--accent-claude-highlight); }
 .story-page[data-story='gemini'] { --story-accent: var(--accent-gemini); --story-accent-bg: var(--accent-gemini-highlight); }
+.story-page[data-story='chatgpt_rewrite'] { --story-accent: var(--accent-chatgpt); --story-accent-bg: var(--accent-chatgpt-highlight); }
+.story-page[data-story='claude_rewrite'] { --story-accent: var(--accent-claude); --story-accent-bg: var(--accent-claude-highlight); }
+.story-page[data-story='gemini_rewrite'] { --story-accent: var(--accent-gemini); --story-accent-bg: var(--accent-gemini-highlight); }
 
 /* ---------- Story switcher ---------- */
 .story-more { margin-top: var(--space-16); }
@@ -578,3 +584,9 @@ p, li, figcaption { text-wrap: pretty; }
 .more-card[data-story='chatgpt'] { border-color: var(--accent-chatgpt); color: var(--accent-chatgpt); }
 .more-card[data-story='claude'] { border-color: var(--accent-claude); color: var(--accent-claude); }
 .more-card[data-story='gemini'] { border-color: var(--accent-gemini); color: var(--accent-gemini); }
+.more-card[data-story='chatgpt_rewrite'] { border-color: var(--accent-chatgpt); color: var(--accent-chatgpt); }
+.more-card[data-story='claude_rewrite'] { border-color: var(--accent-claude); color: var(--accent-claude); }
+.more-card[data-story='gemini_rewrite'] { border-color: var(--accent-gemini); color: var(--accent-gemini); }
+.more-card[data-story='chatgpt_sample'] { border-color: var(--accent-chatgpt); color: var(--accent-chatgpt); }
+.more-card[data-story='claude_sample'] { border-color: var(--accent-claude); color: var(--accent-claude); }
+.more-card[data-story='gemini_sample'] { border-color: var(--accent-gemini); color: var(--accent-gemini); }
