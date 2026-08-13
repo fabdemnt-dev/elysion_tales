@@ -45,6 +45,7 @@ body.simple-page {
 }
 .simple-topline a { color: var(--s-link); text-decoration: none; font-size: 14px; }
 .simple-topline a:hover { text-decoration: underline; }
+.simple-topline-links { display: flex; gap: 12px; flex-wrap: wrap; }
 .simple-brand { font-weight: 600; font-size: 15px; color: var(--s-text); text-decoration: none; }
 
 .simple-wrap h1 {

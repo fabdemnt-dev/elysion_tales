@@ -277,7 +277,10 @@ def simple_head(title, description):
 def simple_topline(back_href, back_label):
     return f"""    <div class="simple-topline">
       <a class="simple-brand" href="{back_href}">{back_label}</a>
-      <a href="index.html">❀ かわいい版で見る</a>
+      <div class="simple-topline-links">
+        <a href="index.html">❀ かわいい版で見る</a>
+        <a href="https://elysion-tales.pplx.app" target="_blank" rel="noopener">❀ 別のかわいい版</a>
+      </div>
     </div>"""
 
 
